@@ -173,7 +173,7 @@ a |_| few tested applications, such as GCC, Python, and Apache.
 
    - Generate the token from aesmd service, via command::
 
-      make SGX_RUN=1
+      make SGX=1 sgx-tokens
 
    - Run Hello World program with Graphene on SGX::
 
@@ -191,7 +191,7 @@ a |_| few tested applications, such as GCC, Python, and Apache.
 
    - Generate token::
 
-      make SGX_RUN=1
+      make SGX=1 sgx-tokens
 
    - Run python helloworld with Graphene-SGX via::
 
@@ -227,7 +227,7 @@ To enable remote attestation tests in ``Pal/regression``, specify the following 
 
     cd PAL/regression
     make SGX=1 RA_CLIENT_SPID=<SPID> RA_CLIENT_KEY=<KEY>
-    make SGX_RUN=1
+    make SGX=1 sgx-tokens
 
 
 If you receive a "GROUP_OUT_OF_DATE" status from IAS, this status indicates that your CPU
