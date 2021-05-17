@@ -11,7 +11,6 @@ clean_targets = clean distclean
 $(clean_targets):
 	$(MAKE) -C src $@
 	$(MAKE) -C regression $@
-	$(MAKE) -C lib $@
 
 .PHONY: test
 test:
